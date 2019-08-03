@@ -15,8 +15,8 @@ limitations under the License.
 */
 package main
 
-import "keys-api/cmd"
+import "github.com/denichodev/keys-api/cmd"
 
 func main() {
-  cmd.Execute()
+	cmd.Execute()
 }
