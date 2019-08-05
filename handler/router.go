@@ -15,6 +15,10 @@ func CreateRouter() chi.Router {
 
 	r.Get("/ping", Ping)
 
+	keysHandler := NewKeysHandler()
+
+	r.Mount("/keys", keysHandler.GetRoutes())
+
 	return r
 }
 
